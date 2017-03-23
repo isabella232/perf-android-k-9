@@ -70,7 +70,7 @@ upToDateSingleVariant {
 }
 
 rebuildSingleVariant {
-  cleanup-tasks = ["clean", "cleanBuildCache"]
+  cleanup-tasks = ["clean"]
   tasks = ["k9mail:assembleDebug"]
 }
 
@@ -81,7 +81,7 @@ upToDateAllVariants {
 }
 
 rebuildAllVariants {
-  cleanup-tasks = ["clean", "cleanBuildCache"]
+  cleanup-tasks = ["clean"]
   tasks = ["k9mail:assemble"]
   gradle-args = ["-x", "lintVitalRelease"]
 }
