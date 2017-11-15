@@ -15,6 +15,10 @@ project.ext {
 }
 
 subprojects {
+    repositories {
+        google()
+        jcenter()
+    }
     project.plugins.whenPluginAdded { plugin ->
         if ("com.android.build.gradle.AppPlugin".equals(plugin.class.name) ||
                 "com.android.build.gradle.LibraryPlugin".equals(plugin.class.name)) {
