@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 if (!rootProject.optimizeForDevelopment) {
     apply from: '../gradle/plugins/checkstyle-android.gradle'
-    apply from: '../gradle/plugins/findbugs-android.gradle'
+    // apply from: '../gradle/plugins/findbugs-android.gradle'
 }
 
 if (rootProject.testCoverage) {
